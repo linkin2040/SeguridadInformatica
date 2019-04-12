@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="es">
+   <head>
+	     <meta charset="UTF-8">
+        <meta name="juan cifuentes,claudiasanchez"content="author">
+	<link rel="stylesheet" href="css/estilomokup.css"> 
+	<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/nav.css">
+	<script type="text/javascript" src="js/modernizr-custom.js"></script>
+    </head>
+
+<header>
+<figure> 
+  <img src="img/unadista.png"alt="unadista">
+    </figure>
+       </header>
+       <body>
+  <header> 
+    <h1> TIPS SOBRE SEGURIDAD INFORMATICA  </h1>
+ </header>
+<body>
+ <body class="no-js">
+      <script>
+      var el = document.getElementsByTagName("body")[0];
+      el.className = "";
+    </script>
+    <nav id="topNav">
+          <ul>
+              <li><a href="index.html" title="index.html">INICIO</a></li>
+              <li><a href="lecturas.html" title="lecturas.html">LECTURAS</a>
+                  <ul>
+                      <li><a href="lect2.html" title="lectura2">Lecturas 2</a></li>
+                        <li><a href="lect3.html" title="lectura3">Lecturas 3</a></li>
+                        <li><a href="lect4.html" title="lectura4">Lecturas 4</a></li>
+                        <li><a href="lect5.html" title="lectura">Lecturas 5</a></li>
+                        </ul>  
+                      <li><a href="multimedia.html" title="multimedia.html">MULTIMEDIA</a>
+                  <ul>
+                      <li><a href="multimedia2.html" title="multimedia2.html">Multimedia 2.1</a></li>
+                  
+                        </ul>     
+                </li>
+                     <li><a href="actividades.html" title="actividades.html">ACTIVIDADES</a>
+              <ul>
+                <li><a href="activ2.html" title="activ2.html">Actividades 2.1</a></li>
+                <li><a href="activ3.html" title="activ3.html">Actividades 2.2</a></li>
+                </ul> 
+                  </li>
+                 <li><a href="autores.html" title="autores.html">AUTORES</a> 
+                </ul>
+                </li>
+              </nav> 
+       
+    <script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+    <script>
+      (function($){
+        
+        //cache nav
+        var nav = $("#topNav");
+        
+        //add indicator and hovers to submenu parents
+        nav.find("li").each(function() {
+          if ($(this).find("ul").length > 0) {
+            $("<span>").text("^").appendTo($(this).children(":first"));
+
+            //show subnav on hover
+            $(this).mouseenter(function() {
+              $(this).find("ul").stop(true, true).slideDown();
+            });
+            
+            //hide submenus on exit
+            $(this).mouseleave(function() {
+              $(this).find("ul").stop(true, true).slideUp();
+            });
+          }
+        });
+      })(jQuery);
+    </script>
+  </body>
+
+ <div id="apDiv20">
+ 
+ 	
+ 	 <article>
+      <figure>
+                    <img src="img/FotoJet.jpg"alt="Diseno">
+
+    </figure>
+      
+         <iframe id='audio_4508528' frameborder='0' allowfullscreen='' scrolling='no' height='200' style='border:1px solid #EEE; box-sizing:border-box; width:100%;' src="https://www.ivoox.com/player_ej_4508528_4_1.html?c1=ff6600"></iframe>
+  </article>
+     
+<FOOTER>
+
+	 <div id="apDiv25">Universidad Nacional Abierta y a Distancia UNAD</div>
+          <div id="apDiv26">Elaborado por: grupo #301122A_611-Diseño de sitios Web</div>
+
+  </FOOTER>	
+
+</body>
+</html>

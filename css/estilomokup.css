@@ -1,0 +1,144 @@
+*{
+	padding: 0;
+	margin: 0;	
+}
+ @font-face {
+    font-family: 'marvelous';
+    src: url('/fonts/marvelous-sans-demo-webfont.woff2') format('woff2'),
+         url('/fonts/marvelous-sans-demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+    footer{
+    font-family: 'open sans',sans-serif; 
+    font-family: "marvelous", Helvetica, verdana;
+    font-size: 20px;
+    border-radius: 0.5em;
+    
+}
+
+body{
+	background: #255 255 255 255;
+	color: #000000;
+	font-family: "marvelous",Helvetica,verdana;
+    font-size:2em;
+}
+h1{
+   color:#ffffff;
+   margin:0.25em auto;
+   text-align: center;
+   font-size: 25px;
+   font-family: "marvelous",verdana,Helvetica;
+	}
+
+	header,nav,article,footer{
+		background: #43c7f4;
+		border-radius: 5em auto;
+		margin: 0.2em auto;
+		max-width: 1150px;
+		padding: 0.10em;
+		text-align:center;
+	}
+
+    section#contenedor{
+    	margin: 0.4em auto;
+    	max-width: 90px;
+    	padding: 0;
+    	/*background: #ffffff;*/
+    }
+
+    article{
+        
+    	background:#f0b429;
+    	border-radius: 0.5em;
+    	min-height: 150px;
+    	padding: 0.30em;
+        max-width: 1150px;
+        text-align: center;
+        font-size: 25px;
+        
+    }
+
+    aside{
+    	width: 100%;
+        text-align: center;
+        font-family: 'open sans',sans-serif; 
+        font-family: "marvelous", Helvetica, verdana;
+        font-size: 15px;
+        text-align: center;
+    }
+   /* menu */
+
+#menu ul {
+display: flex;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+/* items del menu */
+
+
+
+/* enlaces del menu */
+
+#menu  a {
+ display: block;
+        padding: 1.0em;
+        background-color: #F9B53C;
+        text-decoration: none;
+        color: #191C26;
+ 
+}
+
+#menu a:hover {
+
+background-color: #CC673B;
+}
+
+/* items del menu */
+
+#menu ul li ul {
+ display: none;
+
+}
+
+/* efecto al pasar el ratón por los items del menu */
+
+#menu ul li a:hover +ul,#menu ul li ul:hover{
+    display: block;
+ 
+}
+
+div#body{
+margin: auto;
+margin-top: 60px;
+width: 900px;
+border: 1px solid black
+
+}
+div#izquierda{
+    width: 1150px;
+    height: 300px;
+    background-color:#43C7F4;
+    float: left;
+    border-radius: 0.8em;
+}
+
+div#centro{
+    width: 1150px;
+    height: 300px;
+    background-color:#A54686;
+    float: left;
+    border-radius: 0.8em;
+}
+
+div#derecha{
+
+    width: 1150px;
+    height: 300px;
+    background-color:#50B748;
+    float: left;
+    border-radius: 0.8em;
+}
